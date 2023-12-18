@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cronometro__container{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slots{
+    display: inline-flex;
+    margin-bottom: 0.8em;
+
+}
+.slot--item{
+    border: 2px solid black;
+    padding: 0.8em;
+    font-size: 2.5rem;
+
+}
+.button{
+    padding: 0.8em;
+}

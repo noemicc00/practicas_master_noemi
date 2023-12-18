@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buttons">
+        <button value="borrar" class="borrar">BORRAR</button>
+        <button value="copiar" class="copiar">COPIAR</button>
+        <button value="insertar" class="insertar-txt">INSERTAR TEXTO</button>
+    </div>
+    <button class="button">LANZAR MONEDA</button>
+    <div class="result"></div>
+    <p class="dom-item">Holi soy un elemento Dom solitario</p>
+
+    <script>
+        // EJERCIO 1
+        // function drawCircle(diameter){
+        //    document.body.innerHTML += `<div style="height:${diameter}px; width: ${diameter}px; background: red; border-radius: 50%"></div>` 
+        // }
+        
+        // for(i=0; i<15; i++){
+        //     drawCircle(10*i);
+        // }
+
+        // EJERCICIO 2
+         const button = document.querySelector('.button');
+        // const result = document.querySelector('.result');
+
+        // button.addEventListener('click',lanzarMoneda)
+        // var i=0;
+        // function lanzarMoneda(){
+        //     i=i+1;
+        //     let resultado = "";
+        //     if(i>3){
+        //         return result.innerHTML ="No tientes a tu suerte"
+        //     }
+        //     return result.innerHTML = (Math.floor(Math.random()*2)%2)== "0"? "cara" : "cruz";
+        // }
+
+        // EJERCICIO 4
+        const buttons = document.querySelector('.buttons');
+        const borrar = document.querySelector('.borrar');
+        const copiar = document.querySelector('.copiar');
+        const insertar = document.querySelector('.insertar-txt');
+
+
+        // function domManipulator(obj,action){
+        //     if(action == "copiar"){
+        //        obj.innerHTML += "<p> Holi soy un elemento Dom solitario"
+        //     } else if(action == "borrar"){
+        //        obj.innerHTML = "";
+        //     } else if (action == "insertar texto"){
+        //        obj.innerHTML += '<input type= "text">'
+        //     }else{
+        //         console.log("esa acción no está definida");
+        //     }
+        // }
+        
+        // borrar.addEventListener('click',function(){
+        //     domManipulator(domItem,"borrar");
+        // })
+        // copiar.addEventListener('click',function(){
+        //     domManipulator(domItem,"copiar");
+        // })
+        // insertar.addEventListener('click', function () {
+        //     domManipulator(domItem,"insertar texto")
+        // })
+
+        buttons.addEventListener('click',function(e){
+            const domItem = document.querySelector('.dom-item');
+            clickOnElements(domItem,e.target.value)
+        })
+        
+        function clickOnElements (domElement,action){
+            if(action === "borrar"){
+                domElement.remove();
+            } else if(action ==="copiar") {
+                document.body.appendChild(domElement.cloneNode(true));
+            } else if (action ==="insertar"){
+                domElement.innerHTML = "texto generado por JS"
+            } else{
+                console.log("esa acción no está definida");
+            }   
+        }
+
+        // EJERCICIO 5
+        const myObj ={
+            prop1: "super",
+            prop2: "cali",
+            prop3: "fragi",
+            prop4: "listicoespialidoso",
+            concatenar: function(){
+                let all ="";
+                Object.values(this).forEach(item => {
+                    if(typeof item === "string"){
+                        all += item;
+                    }    
+                });
+                return all;
+            }
+        } 
+        console.log(myObj.concatenar());
+
+
+    </script>
+</body>
+</html>

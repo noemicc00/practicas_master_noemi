@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    object-fit:cover;
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(8,0,255,1) 0%, rgba(1,1,33,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img_container{
+    max-width: 25vw;
+    height: 60vh;
+    border: 5px solid orange;
+    display: flex;
+    
+}
+.game_container{
+    display: flex;
+    align-items: center ;
+}
+.button_container{
+ margin: 0 2em;
+}
+button{
+    padding: 0.8em;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border: 4px solid black;
+    cursor: pointer;
+}
+.fighter-txt{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 2rem;
+    color: white;
+}
+.winner{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+    padding: 0.5em;
+    color: rgb(223, 58, 58);
+}
+
+.winner1{
+    border: 10px solid yellow;
+}
+.winner1::after{
+    content: "winner";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    position: absolute;
+    font-size: 3rem;
+}

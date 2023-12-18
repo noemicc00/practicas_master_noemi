@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "MusicNet";
+    src: url(img/MUSICNET.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.container{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(152,152,173,1) 50%, rgba(0,0,0,1) 100%);
+    padding: 0.8em;
+}
+.border{
+    padding: 0.6em;
+    width: 100%;
+    border: 4px solid rgb(159, 159, 255);
+    display: grid;
+    grid-template-columns: 20% 78%;  
+    gap: 2%;
+}
+.img-container{
+    width: 100%;
+    border: .5px solid rgb(159, 159, 255);
+    display: flex;
+}
+.stop, .play, .rewind{
+    cursor: pointer;
+    
+}
+.buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10%;
+    padding-top: 0.8em;
+}
+.track-container{
+    border: .5px solid rgb(159, 159, 255);
+    padding-left:.5em;
+    padding-top: 0.5em;
+}
+.player-container{
+    padding-bottom: 2.5rem;
+}
+.track, .time{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+    
+}
+.trackname, .track-time{
+    font-family: MusicNet;
+    font-size: 6rem;
+    color: rgb(208, 255, 239);
+}
+.track-time{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.track{
+    margin-bottom: 0.5em;
+}
+button{
+   background-color: transparent;
+   border: transparent;
+}
+
+

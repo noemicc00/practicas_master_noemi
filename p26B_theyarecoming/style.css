@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    position: relative;
+}
+
+/* ENCABEZADO */
+.headerBlog-menu--mobile{
+    display: none;
+}
+.headerBlog{
+    display: flex;
+    padding: 1.2em;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(37, 37, 88);
+}
+.headerBlog-image-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    min-width: 40px;
+    border-radius: 50%;
+    padding: .3em;
+    background-color: rgb(159, 112, 202);
+}
+.headerBlog-menu{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center; 
+}
+.headerBlog--item{
+    margin-left: 1.5em;
+}
+
+/* /ENCABEZADO */
+.responsiveMenu{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(122, 122, 218);
+    padding-top: 2em;
+}
+.is-active{
+    display: block;
+}
+.responsiveMenu-close{
+    font-size: 5rem;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+/* SECCION DE FOTOS */
+.sectionBlog{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 3%;
+    margin-bottom: 1.5rem;
+}
+.sectionPost--image-container{
+    padding: 3em;
+    background-color: rgb(159, 112, 202);
+}
+.sectionPost-txt-container{
+    background-color: black;
+    color: white;
+    padding: 0.8em;
+}
+/* /SECCION DE FOTOS */
+
+/* FOOTER */
+.footer{
+    background-color: rgb(37, 37, 88);
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    min-width: 40px;
+    border-radius: 50%;
+    padding: .5em;
+    background-color: rgb(159, 112, 202);
+}
+/* /FOOTER */
+@media screen and (max-width:815px) {
+    .footer{
+        margin-top: 10em;
+    }
+    nav{
+        display: none;
+    }
+    .headerBlog-menu--mobile{
+        display: flex;
+        width: 10%;
+        min-width: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        padding: .5em;
+    }
+}
