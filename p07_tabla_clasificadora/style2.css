@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table,tr,td{
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+td{
+    padding: 50px;
+    text-align: center;
+}
+thead{
+    background-color: blue;
+    color: white;
+}
+.fila2{
+    background-color: rgb(114, 114, 228);
+}
+.fila3{
+    background-color: rgb(181, 181, 228);
+}
+.fila4{
+    background-color: rgb(211, 211, 231);  
+}
+.fila5{
+   background-color: rgb(214, 214, 214); 
+}

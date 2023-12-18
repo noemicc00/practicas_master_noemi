@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- carga la imagen según el tamaño -->
+    <div>
+        <img src="img/imgset/voldemort-small.jpg" 
+        alt="Voldemort sonriente"
+        srcset="img/imgset/voldemort-small.jpg 100w,  
+                img/imgset/voldemort-medium.jpg 300w,
+                img/imgset/voldemort-large.jpg 2000w"
+        >
+    </div>
+
+<!-- parecido que img -->
+    <picture>
+        <source srcset="img/imgset/voldemort-large.jpg" media="(min-width:600px)">
+        <source srcset="img/imgset/voldemort-medium.jpg" media="(min-width:400px)">
+        <img src="img/imgset/voldemort-small.jpg" alt=" foto de vodelmort" title="foto de vodelmort">
+    </picture>
+
+    <!-- Discrimina formatos en función de lo que admita el navegador de archivos -->
+    <picture>
+        <source srcset="img/voldemort-triste.avif" type="image/avif">
+        <source srcset="img/voldemort-triste.webp" type="image/webp">
+        <img src="img/voldemort-triste.jpg" alt=" foto de vodelmort" title="foto de vodelmort">
+    </picture>
+</body>
+</html>

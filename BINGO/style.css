@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+table,tr,td{
+    border: 2px solid #2f69d6;
+    border-collapse: collapse;
+}
+td{
+    padding: 40px;
+    background-color: pink;
+    font-size: 25pt;
+    font-weight: 800;
+}
+.bingoname{
+    padding: 80px;
+    background-color: orange;
+    color: white;
+    font-size: 40pt;
+    font-weight: 800;
+}
+.contenedor-boton{
+    padding: 50px;
+}
+button{
+    padding: 20px;
+}
